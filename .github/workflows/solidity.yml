@@ -11,7 +11,7 @@ defaults:
 jobs:
   changes:
     name: Detect changes
-    runs-on: ubuntu-latest
+    runs-on: slickci-runner-01
     outputs:
       changes: ${{ steps.ch.outputs.changes }}
     steps:
