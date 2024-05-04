@@ -6,7 +6,7 @@ on:
 jobs:
   changes:
     name: detect changes
-    runs-on: ubuntu-latest
+    runs-on: slickci-runner-01
     outputs:
       bash-scripts-src: ${{ steps.bash-scripts.outputs.src }}
     steps:
