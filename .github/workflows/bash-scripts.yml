@@ -2,13 +2,13 @@ name: Bash Scripts
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "develop" ]
   pull_request:
 
 jobs:
   changes:
     name: detect changes
-    runs-on: ubuntu-default
+    runs-on: slickci-runner-01
     outputs:
       bash-scripts-src: ${{ steps.bash-scripts.outputs.src }}
     steps:
